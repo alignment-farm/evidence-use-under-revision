@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+credentials/
+.cache/
+models/
+model-cache/
+# Claim-bearing evidence and small learned checkpoints remain trackable.
