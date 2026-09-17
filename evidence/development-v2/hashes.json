@@ -1,0 +1,23 @@
+{
+  "model.json": "61c51a3c3690f35272a21f5090cc17abd4508a9288205b0d0319b99587f3d958",
+  "stable-256.safetensors": "d721d341dd6b77647f0ecaa8fd3d661969c94cdeb57ec3cb8b75a02695d57a9d",
+  "varied-128.safetensors": "a66cd9567c8a5b7915e196e33b74ae5451ba85e35539e0c5d8d7292216881257",
+  "workload.json": "9d6952022e8e6f67722bf26f83f23a193b54db009bbaff532fe91ae810350b19",
+  "invariants.json": "b40701f293755c4ba0db5d8f0711e3cbf84fa20a0c86c8b71a5cd21cd3b964a0",
+  "varied-256.safetensors": "4b54c06cd66aecdfe35e3c5a1cf04590418c0ab89ec1a2a6718d6506e59aff96",
+  "stable-128.safetensors": "7e8eac44454feeeb7ccfe9d615bc1a8aaeb82dd85240314f250da57711f194ea",
+  "events.jsonl": "206f28d52e9830542d0577d88b712686966627c25e206c524cfb3cb190151ed8",
+  "processes-before.txt": "1f84230e38e3f4e5b3805cfa94e486aa9f7837a1fea4fe9fe479bd290fd0b29d",
+  "manifest.json": "47863651e33446ecac9b91ac0e9698ca934da198c3334c2c27533e4112d26ca5",
+  "initial.json": "199a125e366fd13f57a5599b577a18dd4fddef9e3ba99b3e033ffff924d3dd48",
+  "status.json": "2697aa72083de628e4e8613a7ab56f37413a0d2623912d38ffb2f505f40b9578",
+  "source/uv.lock": "fa263fcb535fcfe0f09f3cd549f331a9f56c2e1fcd9c241ef1a337c0638de448",
+  "source/protocol/development-v1.md": "64a7aa8d62887b3fb11eac4b3365b7a4f16aa8810d8cb4070eff84d1e82a7ad3",
+  "source/notes/methods.md": "f69bc350fb5b29f9f274f3cf6a3ab6e30bbbc61dc6a812ad674c2cebcf3b185b",
+  "source/notes/resource-reservation.md": "1adf92747dd14fc48471f745b49f1617f74a4ea29f18163f1dd3ebe18386fa4e",
+  "source/notes/launch-repair.md": "8e742b5a90fe33abde1e24ea7f45bc37ba3f7d7be3c4185f217c5f3ecfc10947",
+  "source/scripts/cache_sources.py": "4822824096f3b9164c9b3bbc6d3e2f2d3dbf3000a1b58aecc49ef56fdd1ffc97",
+  "source/scripts/workload.py": "bedff25ff5b87b3162a00d1d618ef5765d1a25e63deedfd0360b47d5c87f9a65",
+  "source/scripts/runtime.py": "4f0c6c8fc3f71abdee2306ea3546274a028944ee8ba1be66c5762b1c141a18cc",
+  "source/scripts/experiment.py": "1c8abd2eec2ce860e931993c6a2dbb7f5b5c37ac387415247d3019c373841417"
+}

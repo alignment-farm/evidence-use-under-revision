@@ -1,0 +1,16 @@
+{
+  "args": {
+    "output": "evidence/development-v2",
+    "seed": 731,
+    "steps": 256,
+    "arms": [
+      "stable",
+      "varied"
+    ],
+    "pilot": false
+  },
+  "git": "aba9622f6c44438fff91786f7e4836656cf7e256",
+  "dirty": "?? evidence/development-v2/\n",
+  "started": 1789603617.061395,
+  "resource_limit_bytes": 34359738368
+}

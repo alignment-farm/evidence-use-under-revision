@@ -43,8 +43,8 @@ def evidence(c,p):
 
 def interpreter(text):
     # Consumes exact prompt evidence; does not call oracle or use hidden case labels.
-    lines=text.splitlines();start=next(i for i,x in enumerate(lines) if x.startswith('CURRENT='));doc=json.loads(lines[start][8:])
-    q=json.loads(next(x[8:] for x in lines[start+1:] if x.startswith('REQUEST=')))
+    lines=text.splitlines();doc=json.loads(next(x[8:] for x in lines if x.startswith('CURRENT=')))
+    q=json.loads(next(x[8:] for x in lines if x.startswith('REQUEST=')))
     a=doc['policy'][doc['bindings'][q['entity']]]
     ceiling=a['cap']
     if q['urgent']: ceiling=a['urgent_cap']

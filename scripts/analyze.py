@@ -7,6 +7,15 @@ for f,h in json.loads((p/'hashes.json').read_text()).items():
     with (p/f).open('rb') as stream:assert hashlib.file_digest(stream,'sha256').hexdigest()==h,f
 rows=[json.loads(x) for x in (p/'events.jsonl').read_text().splitlines()]
 assert json.loads((p/'status.json').read_text())['status']=='complete'
+manifest=json.loads((p/'manifest.json').read_text());workload=json.loads((p/'workload.json').read_text())
+for arm in manifest['args']['arms']:
+    updates=[r for r in rows if r['kind']=='update' and r['arm']==arm]
+    if not manifest['args']['pilot']:
+        assert [r['step'] for r in updates]==list(range(1,manifest['args']['steps']+1))
+    for r in updates:
+        h=workload['histories'][arm][r['history_index']]
+        assert json.loads(r['target'])==h['target']==interpreter(r['prompt'])
+    if len(updates)==256:assert sorted(r['history_index'] for r in updates)==list(range(256))
 gens=[r for r in rows if r['kind']=='generation'];groups=collections.defaultdict(list)
 for r in gens:
     target=interpreter(r['prompt']);assert target==r['target']
@@ -17,7 +26,7 @@ tables=[];transitions=[]
 for (arm,step,v),rs in groups.items():
     assert len(rs)==32 and len({r['case'] for r in rs})==32
     table=dict(arm=arm,step=step,version=v,n=len(rs),correct=sum(r['complete'] for r in rs))
-    for name,predicate in [('fresh',lambda r:r['fresh']),('familiar',lambda r:not r['fresh']),('changed',lambda r:r['changed']),('unchanged',lambda r:not r['changed'])]:
+    for name,predicate in [('fresh',lambda r:r['fresh']),('familiar',lambda r:not r['fresh']),('changed',lambda r:r['changed']),('unchanged',lambda r:not r['changed']),('zero',lambda r:r['target'][0]==0),('nonzero',lambda r:r['target'][0]>0),('unchanged_nonzero',lambda r:not r['changed'] and r['target'][0]>0)]:
         sub=[r for r in rs if predicate(r)];table[name]=dict(n=len(sub),correct=sum(r['complete'] for r in sub))
     table['field_correct']=[sum(r['fields'][i] for r in rs) for i in range(4)]
     table['valid']=sum(r['valid'] for r in rs);table['at_limit']=sum(r['at_limit'] for r in rs);tables.append(table)
@@ -30,7 +39,7 @@ costs=[]
 for arm in sorted({r.get('arm') for r in rows if r.get('arm')}):
     rs=[r for r in rows if r.get('arm')==arm];updates=[r for r in rs if r['kind']=='update'];uses=[r for r in rs if r['kind']=='generation'];recall=[r for r in rs if r['kind']=='recall']
     costs.append(dict(arm=arm,updates=len(updates),update_seconds=sum(r['seconds'] for r in updates),input_tokens=sum(r['input_tokens'] for r in updates),loss_tokens=sum(r['loss_tokens'] for r in updates),generations=len(uses),generation_seconds=sum(r['seconds'] for r in uses),prompt_tokens=sum(r['prompt_tokens'] for r in uses),completion_tokens=sum(r['completion_tokens'] for r in uses),recall_calls=len(recall),recall_correct=sum(r['complete'] for r in recall),recall_seconds=sum(r['seconds'] for r in recall)))
-report=dict(run=a.run,tables=tables,unchanged_retention=transitions,investigation_costs=costs,status=json.loads((p/'status.json').read_text()),executable=dict(n=sum(r['kind']=='executable' for r in rows),correct=sum(r.get('complete',False) for r in rows if r['kind']=='executable'),seconds=sum(r['seconds'] for r in rows if r['kind']=='executable')))
+report=dict(run=a.run,analysis_source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),tables=tables,unchanged_retention=transitions,investigation_costs=costs,status=json.loads((p/'status.json').read_text()),executable=dict(n=sum(r['kind']=='executable' for r in rows),correct=sum(r.get('complete',False) for r in rows if r['kind']=='executable'),seconds=sum(r['seconds'] for r in rows if r['kind']=='executable')))
 # Deployment: one acquisition plus the fixed 96-use correction sequence at one endpoint.
 trajectories=[]
 for arm,step in sorted({(r['arm'],r['step']) for r in gens}):

@@ -1,0 +1,1 @@
+Initial development-v1 stopped before model loading: the contention guard mistook its own uv parent for a competing process. Exclude current and parent PIDs. Preserve failed directory; no model updates or generations occurred. Replacement uses development-v2 with unchanged protocol.

@@ -1,0 +1,1821 @@
+{
+  "run": "evidence/development-v2",
+  "analysis_source_sha256": "eb9a34c857b0b86563fd5d452c6b7726eaa2819249cac55803f5307f50f78f9b",
+  "tables": [
+    {
+      "arm": "base",
+      "step": 0,
+      "version": 0,
+      "n": 32,
+      "correct": 18,
+      "fresh": {
+        "n": 16,
+        "correct": 7
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 11
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 18
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 10
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 10
+      },
+      "field_correct": [
+        25,
+        18,
+        29,
+        25
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "base",
+      "step": 0,
+      "version": 1,
+      "n": 32,
+      "correct": 19,
+      "fresh": {
+        "n": 16,
+        "correct": 9
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 10
+      },
+      "changed": {
+        "n": 12,
+        "correct": 7
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 12
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 11
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 4
+      },
+      "field_correct": [
+        27,
+        19,
+        31,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "base",
+      "step": 0,
+      "version": 2,
+      "n": 32,
+      "correct": 18,
+      "fresh": {
+        "n": 16,
+        "correct": 8
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 10
+      },
+      "changed": {
+        "n": 12,
+        "correct": 3
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 15
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 10
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 7
+      },
+      "field_correct": [
+        27,
+        18,
+        32,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 0,
+      "n": 32,
+      "correct": 22,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 11
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 22
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 14
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 14
+      },
+      "field_correct": [
+        26,
+        22,
+        31,
+        26
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 1,
+      "n": 32,
+      "correct": 23,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 12
+      },
+      "changed": {
+        "n": 12,
+        "correct": 8
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 15
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 15
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 7
+      },
+      "field_correct": [
+        27,
+        24,
+        32,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 2,
+      "n": 32,
+      "correct": 23,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 12
+      },
+      "changed": {
+        "n": 12,
+        "correct": 7
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 16
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 15
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 8
+      },
+      "field_correct": [
+        26,
+        25,
+        31,
+        26
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 0,
+      "n": 32,
+      "correct": 23,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 12
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 23
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 15
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 15
+      },
+      "field_correct": [
+        30,
+        23,
+        32,
+        30
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 1,
+      "n": 32,
+      "correct": 22,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 11
+      },
+      "changed": {
+        "n": 12,
+        "correct": 8
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 14
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 14
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 6
+      },
+      "field_correct": [
+        27,
+        22,
+        32,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 2,
+      "n": 32,
+      "correct": 22,
+      "fresh": {
+        "n": 16,
+        "correct": 10
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 12
+      },
+      "changed": {
+        "n": 12,
+        "correct": 6
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 16
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 14
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 8
+      },
+      "field_correct": [
+        26,
+        22,
+        31,
+        26
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 0,
+      "n": 32,
+      "correct": 11,
+      "fresh": {
+        "n": 16,
+        "correct": 7
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 4
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 11
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 3
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 3
+      },
+      "field_correct": [
+        12,
+        11,
+        20,
+        12
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "n": 32,
+      "correct": 13,
+      "fresh": {
+        "n": 16,
+        "correct": 8
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 5
+      },
+      "changed": {
+        "n": 12,
+        "correct": 1
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 12
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 5
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 4
+      },
+      "field_correct": [
+        16,
+        15,
+        22,
+        16
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "n": 32,
+      "correct": 14,
+      "fresh": {
+        "n": 16,
+        "correct": 8
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 6
+      },
+      "changed": {
+        "n": 12,
+        "correct": 5
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 9
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 6
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 1
+      },
+      "field_correct": [
+        17,
+        16,
+        22,
+        17
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 0,
+      "n": 32,
+      "correct": 18,
+      "fresh": {
+        "n": 16,
+        "correct": 10
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 8
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 18
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 10
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 10
+      },
+      "field_correct": [
+        25,
+        19,
+        32,
+        25
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "n": 32,
+      "correct": 21,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 10
+      },
+      "changed": {
+        "n": 12,
+        "correct": 6
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 15
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 13
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 7
+      },
+      "field_correct": [
+        27,
+        21,
+        32,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "n": 32,
+      "correct": 19,
+      "fresh": {
+        "n": 16,
+        "correct": 11
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 8
+      },
+      "changed": {
+        "n": 12,
+        "correct": 6
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 13
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 11
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 5
+      },
+      "field_correct": [
+        26,
+        20,
+        32,
+        26
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 0,
+      "n": 32,
+      "correct": 11,
+      "fresh": {
+        "n": 16,
+        "correct": 6
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 5
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 11
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 3
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 3
+      },
+      "field_correct": [
+        19,
+        14,
+        20,
+        18
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "n": 32,
+      "correct": 13,
+      "fresh": {
+        "n": 16,
+        "correct": 7
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 6
+      },
+      "changed": {
+        "n": 12,
+        "correct": 2
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 11
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 5
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 3
+      },
+      "field_correct": [
+        22,
+        16,
+        22,
+        23
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "n": 32,
+      "correct": 12,
+      "fresh": {
+        "n": 16,
+        "correct": 6
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 6
+      },
+      "changed": {
+        "n": 12,
+        "correct": 2
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 10
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 4
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 2
+      },
+      "field_correct": [
+        23,
+        15,
+        22,
+        22
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 0,
+      "n": 32,
+      "correct": 17,
+      "fresh": {
+        "n": 16,
+        "correct": 8
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 9
+      },
+      "changed": {
+        "n": 0,
+        "correct": 0
+      },
+      "unchanged": {
+        "n": 32,
+        "correct": 17
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 9
+      },
+      "unchanged_nonzero": {
+        "n": 24,
+        "correct": 9
+      },
+      "field_correct": [
+        23,
+        18,
+        31,
+        23
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "n": 32,
+      "correct": 20,
+      "fresh": {
+        "n": 16,
+        "correct": 10
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 10
+      },
+      "changed": {
+        "n": 12,
+        "correct": 6
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 14
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 12
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 6
+      },
+      "field_correct": [
+        26,
+        21,
+        32,
+        27
+      ],
+      "valid": 32,
+      "at_limit": 0
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "n": 32,
+      "correct": 21,
+      "fresh": {
+        "n": 16,
+        "correct": 10
+      },
+      "familiar": {
+        "n": 16,
+        "correct": 11
+      },
+      "changed": {
+        "n": 12,
+        "correct": 5
+      },
+      "unchanged": {
+        "n": 20,
+        "correct": 16
+      },
+      "zero": {
+        "n": 8,
+        "correct": 8
+      },
+      "nonzero": {
+        "n": 24,
+        "correct": 13
+      },
+      "unchanged_nonzero": {
+        "n": 12,
+        "correct": 8
+      },
+      "field_correct": [
+        25,
+        21,
+        32,
+        25
+      ],
+      "valid": 32,
+      "at_limit": 0
+    }
+  ],
+  "unchanged_retention": [
+    {
+      "arm": "base",
+      "step": 0,
+      "version": 1,
+      "previously_correct_unchanged": 13,
+      "retained": 12
+    },
+    {
+      "arm": "base",
+      "step": 0,
+      "version": 2,
+      "previously_correct_unchanged": 15,
+      "retained": 15
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 1,
+      "previously_correct_unchanged": 10,
+      "retained": 10
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 2,
+      "previously_correct_unchanged": 16,
+      "retained": 16
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 1,
+      "previously_correct_unchanged": 15,
+      "retained": 13
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 2,
+      "previously_correct_unchanged": 16,
+      "retained": 16
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "previously_correct_unchanged": 11,
+      "retained": 11
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "previously_correct_unchanged": 9,
+      "retained": 9
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "previously_correct_unchanged": 13,
+      "retained": 13
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "previously_correct_unchanged": 14,
+      "retained": 13
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "previously_correct_unchanged": 11,
+      "retained": 11
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "previously_correct_unchanged": 10,
+      "retained": 10
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "previously_correct_unchanged": 11,
+      "retained": 11
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "previously_correct_unchanged": 14,
+      "retained": 14
+    }
+  ],
+  "investigation_costs": [
+    {
+      "arm": "base",
+      "updates": 0,
+      "update_seconds": 0,
+      "input_tokens": 0,
+      "loss_tokens": 0,
+      "generations": 96,
+      "generation_seconds": 63.44998574999045,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1909,
+      "recall_calls": 0,
+      "recall_correct": 0,
+      "recall_seconds": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "updates": 0,
+      "update_seconds": 0,
+      "input_tokens": 0,
+      "loss_tokens": 0,
+      "generations": 96,
+      "generation_seconds": 121.29490870889276,
+      "prompt_tokens": 111716,
+      "completion_tokens": 1909,
+      "recall_calls": 0,
+      "recall_correct": 0,
+      "recall_seconds": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "updates": 0,
+      "update_seconds": 0,
+      "input_tokens": 0,
+      "loss_tokens": 0,
+      "generations": 96,
+      "generation_seconds": 120.45084171000053,
+      "prompt_tokens": 112388,
+      "completion_tokens": 1907,
+      "recall_calls": 0,
+      "recall_correct": 0,
+      "recall_seconds": 0
+    },
+    {
+      "arm": "stable",
+      "updates": 256,
+      "update_seconds": 112.60540682042483,
+      "input_tokens": 76496,
+      "loss_tokens": 3408,
+      "generations": 192,
+      "generation_seconds": 106.06959186575841,
+      "prompt_tokens": 55240,
+      "completion_tokens": 2657,
+      "recall_calls": 16,
+      "recall_correct": 4,
+      "recall_seconds": 8.675913372047944
+    },
+    {
+      "arm": "varied",
+      "updates": 256,
+      "update_seconds": 112.68427409123979,
+      "input_tokens": 76819,
+      "loss_tokens": 3539,
+      "generations": 192,
+      "generation_seconds": 105.8833752097562,
+      "prompt_tokens": 55240,
+      "completion_tokens": 2651,
+      "recall_calls": 16,
+      "recall_correct": 6,
+      "recall_seconds": 8.721108413970796
+    }
+  ],
+  "status": {
+    "status": "complete",
+    "seconds": 875.198421292007,
+    "peak_mlx_bytes": 9617521692
+  },
+  "executable": {
+    "n": 96,
+    "correct": 96,
+    "seconds": 0.001013503671856597
+  },
+  "candidate_trajectories": [
+    {
+      "arm": "base",
+      "step": 0,
+      "correct": 55,
+      "uses": 96,
+      "acquisition_updates": 0,
+      "acquisition_seconds": 0,
+      "use_seconds": 63.44998574999045,
+      "total_active_seconds": 63.44998574999045,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1909,
+      "training_input_tokens": 0,
+      "training_loss_tokens": 0,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "correct": 68,
+      "uses": 96,
+      "acquisition_updates": 0,
+      "acquisition_seconds": 0,
+      "use_seconds": 121.29490870889276,
+      "total_active_seconds": 121.29490870889276,
+      "prompt_tokens": 111716,
+      "completion_tokens": 1909,
+      "training_input_tokens": 0,
+      "training_loss_tokens": 0,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "correct": 67,
+      "uses": 96,
+      "acquisition_updates": 0,
+      "acquisition_seconds": 0,
+      "use_seconds": 120.45084171000053,
+      "total_active_seconds": 120.45084171000053,
+      "prompt_tokens": 112388,
+      "completion_tokens": 1907,
+      "training_input_tokens": 0,
+      "training_loss_tokens": 0,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "correct": 38,
+      "uses": 96,
+      "acquisition_updates": 128,
+      "acquisition_seconds": 56.35865457318141,
+      "use_seconds": 52.661655041825725,
+      "total_active_seconds": 109.02030961500714,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1308,
+      "training_input_tokens": 38248,
+      "training_loss_tokens": 1704,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "correct": 58,
+      "uses": 96,
+      "acquisition_updates": 256,
+      "acquisition_seconds": 112.60540682042483,
+      "use_seconds": 53.40793682393269,
+      "total_active_seconds": 166.01334364435752,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1349,
+      "training_input_tokens": 76496,
+      "training_loss_tokens": 3408,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "correct": 36,
+      "uses": 96,
+      "acquisition_updates": 128,
+      "acquisition_seconds": 56.348647173144855,
+      "use_seconds": 52.77319575185538,
+      "total_active_seconds": 109.12184292500024,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1316,
+      "training_input_tokens": 38360,
+      "training_loss_tokens": 1752,
+      "maintenance_updates": 0
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "correct": 58,
+      "uses": 96,
+      "acquisition_updates": 256,
+      "acquisition_seconds": 112.68427409123979,
+      "use_seconds": 53.11017945790081,
+      "total_active_seconds": 165.7944535491406,
+      "prompt_tokens": 27620,
+      "completion_tokens": 1335,
+      "training_input_tokens": 76819,
+      "training_loss_tokens": 3539,
+      "maintenance_updates": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 2
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 6,
+      "lost": 2
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 3,
+      "lost": 1
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-stable",
+      "step": 0,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 3,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 1
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 4,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 1
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 0
+    },
+    {
+      "arm": "lesson-varied",
+      "step": 0,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 0
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 7
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 1
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 0,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 7
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 0,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 3,
+      "lost": 7
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 5
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 7
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 1,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 4
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 5
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 2
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 6
+    },
+    {
+      "arm": "stable",
+      "step": 128,
+      "version": 2,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 0,
+      "lost": 3
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 5
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 5,
+      "lost": 2
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 0,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 5
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 0,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 3
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 3,
+      "lost": 3
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 4,
+      "lost": 2
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 4
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 1,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 2
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 3
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 4,
+      "lost": 1
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "reference": "lesson-stable",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 4
+    },
+    {
+      "arm": "stable",
+      "step": 256,
+      "version": 2,
+      "reference": "lesson-stable",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 6
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 0,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 7
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 0,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 6
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 4
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 3
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 5
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 1,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 5
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 4
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 3
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 6
+    },
+    {
+      "arm": "varied",
+      "step": 128,
+      "version": 2,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 5
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 0,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 3
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 0,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 0,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 0,
+      "lost": 3
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 0,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 4
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 2,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 1,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "reference": "base",
+      "fresh": false,
+      "n": 16,
+      "gained": 2,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "reference": "base",
+      "fresh": true,
+      "n": 16,
+      "gained": 3,
+      "lost": 1
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "reference": "lesson-varied",
+      "fresh": false,
+      "n": 16,
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "arm": "varied",
+      "step": 256,
+      "version": 2,
+      "reference": "lesson-varied",
+      "fresh": true,
+      "n": 16,
+      "gained": 1,
+      "lost": 1
+    }
+  ],
+  "correction_operations": [
+    {
+      "version": 1,
+      "fields": [
+        "A.urgent_cap",
+        "A.lane"
+      ]
+    },
+    {
+      "version": 2,
+      "fields": [
+        "B.price",
+        "B.cap"
+      ]
+    }
+  ],
+  "limitations": [
+    "Investigator construction time not measured; lesson and executable construction supplied.",
+    "Native seconds are observed local costs, not isolated benchmark or dollars.",
+    "Early checkpoint evaluations, other arms, development, and audit are investigation costs, not candidate deployment costs."
+  ]
+}
