@@ -1,0 +1,16 @@
+{
+  "args": {
+    "output": "evidence/order-diagnostic-v1",
+    "seed": 731,
+    "steps": 256,
+    "arms": [
+      "varied"
+    ],
+    "pilot": false,
+    "shuffle": true
+  },
+  "git": "8a38945290021a8a9c1f2483028e8200c0629471",
+  "dirty": "?? evidence/order-diagnostic-v1/\n",
+  "started": 1789604636.5329878,
+  "resource_limit_bytes": 34359738368
+}
