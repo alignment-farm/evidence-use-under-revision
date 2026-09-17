@@ -32,7 +32,7 @@ def cases(seed,train=False,rebind=False):
             for j in range(8 if train else 2):
                 # Evaluation requests differ from training and include scarcity/zero/boundaries.
                 stock=([0,2,6,11,3,9,5,14] if train else [0,3,8,13])[(i+j)% (8 if train else 4)]
-                out.append(dict(id=f'{"train" if train else "eval"}:{e}:{j}',fresh=fresh,
+                out.append(dict(id=f'{"train" if train else "eval"}:{e}:{j}',fresh=fresh,binding_changed=bool(fresh and rebind and b[e]!=['A','B'][i%2]),
                     request=dict(entity=e,request=r.choice([1,4,7,10] if train else [2,5,8,12]),stock=stock,urgent=bool((i//2+j)%2),waived=bool((i+j)%2)),bindings=b))
     return out
 

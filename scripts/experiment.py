@@ -34,7 +34,7 @@ try:
             for c in (bank if subset is None else subset):
                 guard();p=revised(p0,v);target=oracle(c,p);text=prompt(c,p,extra);ids=rt.encode(text)
                 r=rt.generate(ids,limit=48)
-                write('generation',arm=arm,step=step,version=v,case=c['id'],fresh=c['fresh'],target=target,prompt=text,changed=v>0 and oracle(c,revised(p0,v-1))!=target,**r,**score(r['raw'],target))
+                write('generation',arm=arm,step=step,version=v,case=c['id'],fresh=c['fresh'],binding_changed=c.get('binding_changed',False),target=target,prompt=text,changed=v>0 and oracle(c,revised(p0,v-1))!=target,**r,**score(r['raw'],target))
         print('evaluated',arm,step,flush=True)
     # Exact executable behavior and evidence bytes are independently recorded.
     for v in range(3):

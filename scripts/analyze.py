@@ -26,7 +26,7 @@ tables=[];transitions=[]
 for (arm,step,v),rs in groups.items():
     assert len(rs)==32 and len({r['case'] for r in rs})==32
     table=dict(arm=arm,step=step,version=v,n=len(rs),correct=sum(r['complete'] for r in rs))
-    for name,predicate in [('fresh',lambda r:r['fresh']),('familiar',lambda r:not r['fresh']),('changed',lambda r:r['changed']),('unchanged',lambda r:not r['changed']),('zero',lambda r:r['target'][0]==0),('nonzero',lambda r:r['target'][0]>0),('unchanged_nonzero',lambda r:not r['changed'] and r['target'][0]>0)]:
+    for name,predicate in [('fresh',lambda r:r['fresh']),('rebound',lambda r:r.get('binding_changed',False)),('familiar',lambda r:not r['fresh']),('changed',lambda r:r['changed']),('unchanged',lambda r:not r['changed']),('zero',lambda r:r['target'][0]==0),('nonzero',lambda r:r['target'][0]>0),('unchanged_nonzero',lambda r:not r['changed'] and r['target'][0]>0)]:
         sub=[r for r in rs if predicate(r)];table[name]=dict(n=len(sub),correct=sum(r['complete'] for r in sub))
     table['field_correct']=[sum(r['fields'][i] for r in rs) for i in range(4)]
     table['valid']=sum(r['valid'] for r in rs);table['at_limit']=sum(r['at_limit'] for r in rs);tables.append(table)
