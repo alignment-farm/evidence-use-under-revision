@@ -20,11 +20,14 @@ def revised(p,v):
 def bindings(seed,fresh=False):
     return {f'E{seed}_{"new" if fresh else "old"}_{i}':['A','B'][i%2] for i in range(8)}
 
-def cases(seed,train=False):
+def cases(seed,train=False,rebind=False):
     r=random.Random(seed+(0 if train else 451))
     out=[]
     for fresh in ([False] if train else [False,True]):
         b=bindings(seed,fresh)
+        if fresh and rebind:
+            values=list(b.values());random.Random(seed+1931).shuffle(values)
+            b=dict(zip(b,values))
         for i,e in enumerate(b):
             for j in range(8 if train else 2):
                 # Evaluation requests differ from training and include scarcity/zero/boundaries.

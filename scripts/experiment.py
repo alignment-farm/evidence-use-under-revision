@@ -4,7 +4,7 @@ import mlx.core as mx
 from runtime import Runtime, resource, sha, digest
 from workload import *
 
-ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--seed',type=int,default=731);ap.add_argument('--steps',type=int,default=256);ap.add_argument('--arms',nargs='+',default=['stable','varied']);ap.add_argument('--pilot',action='store_true');ap.add_argument('--shuffle',action='store_true');a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--seed',type=int,default=731);ap.add_argument('--steps',type=int,default=256);ap.add_argument('--arms',nargs='+',default=['stable','varied']);ap.add_argument('--pilot',action='store_true');ap.add_argument('--shuffle',action='store_true');ap.add_argument('--rebind',action='store_true');a=ap.parse_args()
 assert a.steps<=256 and set(a.arms)<= {'stable','varied'}
 out=Path(a.output);out.mkdir(parents=True,exist_ok=False)
 start=time.monotonic();events=(out/'events.jsonl').open('w');status='failed'
@@ -27,7 +27,7 @@ try:
     guard();mx.set_memory_limit(32*1024**3);mx.set_cache_limit(2*1024**3)
     save('model.json',resource());rt=Runtime(seed=a.seed);initial=rt.snapshot()
     save('initial.json',dict(adapter_digest=digest(initial),base_hash=rt.base_hash))
-    bank=cases(a.seed);p0=policy(a.seed)
+    bank=cases(a.seed,rebind=a.rebind);p0=policy(a.seed)
     save('workload.json',dict(cases=bank,policies=[revised(p0,v) for v in range(3)],histories={arm:history(a.seed,arm) for arm in a.arms},lessons={arm:lesson(a.seed,arm) for arm in a.arms}))
     def evaluate(arm,step,extra='',subset=None):
         for v in range(3):
