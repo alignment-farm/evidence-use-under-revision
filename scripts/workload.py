@@ -89,6 +89,8 @@ if __name__=='__main__':
                 for v in range(3):
                     p=revised(policy(seed),v);y=oracle(c,p)
                     assert interpreter(evidence(c,p))==y
+                    if not train:
+                        for arm in ['stable','varied']:assert interpreter(prompt(c,p,lesson(seed,arm)))==y
                     assert score(json.dumps(y),y)['complete']
                     for k in range(4):
                         bad=y.copy();bad[k]=bad[k]+1 if isinstance(bad[k],int) else 'WRONG'
