@@ -1,0 +1,18 @@
+{
+  "args": {
+    "output": "evidence/fresh-v1",
+    "seed": 947,
+    "steps": 256,
+    "arms": [
+      "stable",
+      "varied"
+    ],
+    "pilot": false,
+    "shuffle": true,
+    "rebind": true
+  },
+  "git": "8e93219b1582ff60e22342fa64a06d817c4b0328",
+  "dirty": "?? evidence/fresh-v1/\n",
+  "started": 1789605202.341402,
+  "resource_limit_bytes": 34359738368
+}

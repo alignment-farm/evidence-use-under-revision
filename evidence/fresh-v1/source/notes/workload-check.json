@@ -1,0 +1,24 @@
+{
+  "731": {
+    "train_records": 256,
+    "training_cases": 64,
+    "cases_with_changing_answers": 56,
+    "eval_cases": 32,
+    "fresh": 16,
+    "query_overlap": 0,
+    "versions": [
+      {
+        "version": 1,
+        "changed": 12,
+        "changed_fresh": 6,
+        "unchanged": 20
+      },
+      {
+        "version": 2,
+        "changed": 12,
+        "changed_fresh": 6,
+        "unchanged": 20
+      }
+    ]
+  }
+}

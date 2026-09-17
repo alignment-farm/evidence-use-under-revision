@@ -1,0 +1,7 @@
+{
+  "same_initial_state": true,
+  "same_training_multiset": true,
+  "same_192_control_outputs": true,
+  "blocked_initial_complete": 17,
+  "shuffled_initial_complete": 21
+}
