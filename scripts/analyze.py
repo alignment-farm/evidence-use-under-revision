@@ -20,7 +20,7 @@ for (arm,step,v),rs in groups.items():
     for name,predicate in [('fresh',lambda r:r['fresh']),('familiar',lambda r:not r['fresh']),('changed',lambda r:r['changed']),('unchanged',lambda r:not r['changed'])]:
         sub=[r for r in rs if predicate(r)];table[name]=dict(n=len(sub),correct=sum(r['complete'] for r in sub))
     table['field_correct']=[sum(r['fields'][i] for r in rs) for i in range(4)]
-    table['valid']=sum(r['valid'] for r in rs);tables.append(table)
+    table['valid']=sum(r['valid'] for r in rs);table['at_limit']=sum(r['at_limit'] for r in rs);tables.append(table)
     if v:
         before={r['case']:r for r in groups[(arm,step,v-1)]}
         eligible=[r for r in rs if not r['changed'] and before[r['case']]['complete']]
@@ -37,6 +37,16 @@ for arm,step in sorted({(r['arm'],r['step']) for r in gens}):
     updates=[r for r in rows if r['kind']=='update' and r['arm']==arm and r['step']<=step]
     trajectories.append(dict(arm=arm,step=step,correct=sum(r['complete'] for r in uses),uses=len(uses),acquisition_updates=len(updates),acquisition_seconds=sum(r['seconds'] for r in updates),use_seconds=sum(r['seconds'] for r in uses),total_active_seconds=sum(r['seconds'] for r in uses+updates),prompt_tokens=sum(r['prompt_tokens'] for r in uses),completion_tokens=sum(r['completion_tokens'] for r in uses),training_input_tokens=sum(r['input_tokens'] for r in updates),training_loss_tokens=sum(r['loss_tokens'] for r in updates),maintenance_updates=0))
 report['candidate_trajectories']=trajectories
+paired=[]
+for (arm,step,v),rs in groups.items():
+    if arm=='base':continue
+    refs=['base'] + (['lesson-'+arm] if arm in ['stable','varied'] else [])
+    for ref in refs:
+        before={r['case']:r for r in groups[(ref,0,v)]}
+        for fresh in [False,True]:
+            subset=[r for r in rs if r['fresh']==fresh]
+            paired.append(dict(arm=arm,step=step,version=v,reference=ref,fresh=fresh,n=len(subset),gained=sum(r['complete'] and not before[r['case']]['complete'] for r in subset),lost=sum(not r['complete'] and before[r['case']]['complete'] for r in subset)))
+report['paired_comparisons']=paired
 report['correction_operations']=[dict(version=1,fields=['A.urgent_cap','A.lane']),dict(version=2,fields=['B.price','B.cap'])]
 report['limitations']=['Investigator construction time not measured; lesson and executable construction supplied.', 'Native seconds are observed local costs, not isolated benchmark or dollars.', 'Early checkpoint evaluations, other arms, development, and audit are investigation costs, not candidate deployment costs.']
 (out/'report.json').write_text(json.dumps(report,indent=2))
