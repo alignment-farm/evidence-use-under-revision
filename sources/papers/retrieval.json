@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://export.arxiv.org/api/query?id_list=2303.11315,2410.10796,2509.13683",
+    "file": "metadata.xml",
+    "sha256": "5981f70390bea44a22e3274afd5ccaf7d299ab1d4e61d79735333d460b6c39d3",
+    "headers": {
+      "Connection": "close",
+      "Content-Length": "7784",
+      "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+      "x-cloud-trace-context": "1142cf37b0fd9a710a417f48ac163da3",
+      "content-type": "application/atom+xml; charset=utf-8",
+      "server": "Google Frontend",
+      "Accept-Ranges": "bytes",
+      "Age": "0",
+      "Date": "Thu, 17 Sep 2026 00:03:51 GMT",
+      "X-Served-By": "cache-lga21962-LGA, cache-lga21962-LGA, cache-lga21975-LGA, cache-mia-kfll1870044-MIA",
+      "X-Cache": "MISS, MISS, MISS",
+      "X-Cache-Hits": "0, 0, 0",
+      "X-Timer": "S1789603431.365687,VS0,VE142",
+      "Strict-Transport-Security": "max-age=300"
+    }
+  },
+  {
+    "url": "https://arxiv.org/html/2303.11315v2",
+    "file": "2303.11315v2.html",
+    "sha256": "ae614c90636e8af33c930086a6ab881482d40e88ddad124ee1459b8bec7ca6cb",
+    "headers": {
+      "Connection": "close",
+      "Content-Length": "213348",
+      "server": "Google Frontend",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "\"CP7w15uXupYDEAE=\"",
+      "access-control-allow-origin": "*",
+      "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+      "x-robots-tag": "nofollow",
+      "last-modified": "Mon, 24 Aug 2026 21:13:00 GMT",
+      "link": "<https://arxiv.org/html/2303.11315>; rel='canonical'",
+      "Accept-Ranges": "bytes",
+      "Age": "103825",
+      "Date": "Thu, 17 Sep 2026 00:03:54 GMT",
+      "X-Served-By": "cache-lga21950-LGA, cache-lga21950-LGA, cache-lga21960-LGA, cache-mia-kfll1870028-MIA",
+      "X-Cache": "MISS, HIT, MISS",
+      "X-Timer": "S1789603435.905678,VS0,VE41"
+    }
+  },
+  {
+    "url": "https://arxiv.org/html/2410.10796v3",
+    "file": "2410.10796v3.html",
+    "sha256": "cb8200785578d185f5047fc2f4cb500cfeb57cb17090a0bcb6a60f784c77257c",
+    "headers": {
+      "Connection": "close",
+      "Content-Length": "774948",
+      "content-type": "text/html; charset=utf-8",
+      "x-robots-tag": "nofollow",
+      "last-modified": "Mon, 24 Aug 2026 19:35:32 GMT",
+      "link": "<https://arxiv.org/html/2410.10796>; rel='canonical'",
+      "access-control-allow-origin": "*",
+      "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+      "server": "Google Frontend",
+      "etag": "\"CPjSqbeBupYDEAE=\"",
+      "Accept-Ranges": "bytes",
+      "Age": "99786",
+      "Date": "Thu, 17 Sep 2026 00:03:58 GMT",
+      "X-Served-By": "cache-lga21990-LGA, cache-lga21990-LGA, cache-lga21924-LGA, cache-mia-kmia1760086-MIA",
+      "X-Cache": "MISS, HIT, HIT",
+      "X-Timer": "S1789603438.388822,VS0,VE42"
+    }
+  },
+  {
+    "url": "https://arxiv.org/html/2509.13683v1",
+    "file": "2509.13683v1.html",
+    "sha256": "41acd0df338b4392a91a646a3ded6edea301bd74c3bd192d26e68b13e3fcc0fb",
+    "headers": {
+      "Connection": "close",
+      "Content-Length": "236876",
+      "server": "Google Frontend",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "\"CMPp5L2gupYDEAE=\"",
+      "access-control-allow-origin": "*",
+      "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+      "x-robots-tag": "nofollow",
+      "last-modified": "Mon, 24 Aug 2026 21:54:27 GMT",
+      "link": "<https://arxiv.org/html/2509.13683>; rel='canonical'",
+      "Accept-Ranges": "bytes",
+      "Age": "477964",
+      "Date": "Thu, 17 Sep 2026 00:04:01 GMT",
+      "X-Served-By": "cache-lga21991-LGA, cache-lga21991-LGA, cache-lga21966-LGA, cache-mia-kmia1760034-MIA",
+      "X-Cache": "MISS, HIT, MISS",
+      "X-Timer": "S1789603442.861493,VS0,VE44"
+    }
+  }
+]

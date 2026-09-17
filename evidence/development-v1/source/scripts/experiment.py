@@ -15,7 +15,7 @@ def guard():
     if time.monotonic()-start>1800: raise TimeoutError('30 minute invocation budget')
     if mx.get_peak_memory()>32*1024**3:raise MemoryError('32GiB MLX budget')
     ps=subprocess.check_output(['ps','-axo','pid,command'],text=True)
-    others=[x for x in ps.splitlines() if ('python' in x.lower()) and any(k in x for k in ['scripts/experiment','scripts/maintenance_','scripts/state_support','scripts/acquire','scripts/mlx_']) and int(x.strip().split()[0])not in {os.getpid(),os.getppid()} and ' /bin/zsh ' not in x]
+    others=[x for x in ps.splitlines() if ('python' in x.lower()) and any(k in x for k in ['scripts/experiment','scripts/maintenance_','scripts/state_support','scripts/acquire','scripts/mlx_']) and int(x.strip().split()[0])!=os.getpid() and ' /bin/zsh ' not in x]
     if others:raise RuntimeError('Competing model job: '+str(others))
 try:
     lock=open('/tmp/evidence-use-under-revision.lock','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)

@@ -1,0 +1,14 @@
+{
+  "events.jsonl": "51dc8f16f1b738223debb34eefe6bdcc9ecfa1d8047a59a5577083108171f6fa",
+  "processes-before.txt": "29cfe74d6e1f3527de10f141d382900b20b1c8337e770de1ffae705d2fcc5334",
+  "manifest.json": "2b06a47374420b40e9224820ad0c17a31e52151fde50277486e94e8500eba5d2",
+  "status.json": "d20107298de05294d03614afbf4a0a01adc0d237fbbd52c5e56aafaa818f928d",
+  "source/uv.lock": "fa263fcb535fcfe0f09f3cd549f331a9f56c2e1fcd9c241ef1a337c0638de448",
+  "source/protocol/development-v1.md": "64a7aa8d62887b3fb11eac4b3365b7a4f16aa8810d8cb4070eff84d1e82a7ad3",
+  "source/notes/methods.md": "f69bc350fb5b29f9f274f3cf6a3ab6e30bbbc61dc6a812ad674c2cebcf3b185b",
+  "source/notes/resource-reservation.md": "1adf92747dd14fc48471f745b49f1617f74a4ea29f18163f1dd3ebe18386fa4e",
+  "source/scripts/cache_sources.py": "4822824096f3b9164c9b3bbc6d3e2f2d3dbf3000a1b58aecc49ef56fdd1ffc97",
+  "source/scripts/workload.py": "bedff25ff5b87b3162a00d1d618ef5765d1a25e63deedfd0360b47d5c87f9a65",
+  "source/scripts/runtime.py": "4f0c6c8fc3f71abdee2306ea3546274a028944ee8ba1be66c5762b1c141a18cc",
+  "source/scripts/experiment.py": "107b1961d94e0f52e6115fcc9119e844563185af0fb4614a64282fe8344bf77f"
+}
