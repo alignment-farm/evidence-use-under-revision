@@ -11,3 +11,4 @@ credentials/
 models/
 model-cache/
 # Claim-bearing evidence and small learned checkpoints remain trackable.
+downloads/
