@@ -35,3 +35,33 @@ versioned; no completed raw event is edited. Training and generation timers excl
 hashing, orchestration and verification; status wall time includes runtime setup.
 MLX peak allocation is not full system memory. Process guards do not establish
 isolated timing or coordinate unrelated non-Python workloads.
+
+## Diagnostic and frozen fresh assessment
+
+The equal-data ordering diagnostic was launched at8a38945 and published atcc935da;
+its audit and data/control identity check are at8e93219. Final execution starts
+at8e93219 with the conditional recipe decision already fixed:
+
+```sh
+uv run --extra adaptation --no-sync python scripts/experiment.py --output evidence/NEW-ORDER --seed 731 --arms varied --shuffle
+uv run --extra adaptation --no-sync python scripts/experiment.py --output evidence/NEW-FRESH --seed 947 --shuffle --rebind
+uv run --extra adaptation --no-sync python scripts/analyze.py evidence/NEW-FRESH --output evidence/NEW-FRESH-analysis
+uv run --extra adaptation --no-sync python scripts/audit.py evidence/NEW-FRESH --output evidence/NEW-FRESH-audit
+```
+
+Run heavy commands sequentially. The independent fresh bindings are deliberate;
+see protocol/final-v1.md. Identical integer supports do not imply identical
+requests or entity bindings. The earlier development analysis failure selected
+a historical request from a lesson prompt; notes/analysis-repair.md explains its
+repair and regression checks. Original raw scores did not change.
+
+`scripts/publish.py --output evidence/NEW-PUBLICATION` rebuilds the final ledger
+from the three named audited runs; for a full rerun, change its `specs` paths to
+your newly generated directories. Counts include failed-quality endpoints and
+training-fit probes. It distinguishes candidate96-use trajectories from total
+investigation costs. The launch failure and empty failed analysis remain recorded.
+Model generations use new prompt caches; no method receives persistent KV prefix
+reuse. Times therefore describe this implementation, not an optimal serving stack.
+Investigator lesson/algorithm construction effort is disclosed but not timed or
+priced. Adapter loading, source hashing and audits are not silently counted as
+zero; they are included in run wall/audit costs rather than per-use model timers.
