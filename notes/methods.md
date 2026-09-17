@@ -27,3 +27,5 @@ last-block selection, q/v keys, direct scale convention, zero-B initialization.
 Actual local model hashes and gradients/restoration still require run evidence.
 Root-linked sources/2026-09-16-evidence-use ledger is absent in this checkout;
 we rely on exact primary versions and the README overlap notes instead.
+
+Cached primary full texts and the API response are now under ignored .cache/arxiv; sources/papers/retrieval.json preserves URLs, exact versions, headers and hashes. Earlier local commits retain the initial public-source archive; history is not rewritten because run revisions must remain identifiable. Package caches, environments and base weights were never tracked.

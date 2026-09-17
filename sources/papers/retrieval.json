@@ -18,7 +18,8 @@
       "X-Cache-Hits": "0, 0, 0",
       "X-Timer": "S1789603431.365687,VS0,VE142",
       "Strict-Transport-Security": "max-age=300"
-    }
+    },
+    "cache_file": ".cache/arxiv/metadata.xml"
   },
   {
     "url": "https://arxiv.org/html/2303.11315v2",
@@ -41,7 +42,8 @@
       "X-Served-By": "cache-lga21950-LGA, cache-lga21950-LGA, cache-lga21960-LGA, cache-mia-kfll1870028-MIA",
       "X-Cache": "MISS, HIT, MISS",
       "X-Timer": "S1789603435.905678,VS0,VE41"
-    }
+    },
+    "cache_file": ".cache/arxiv/2303.11315v2.html"
   },
   {
     "url": "https://arxiv.org/html/2410.10796v3",
@@ -64,7 +66,8 @@
       "X-Served-By": "cache-lga21990-LGA, cache-lga21990-LGA, cache-lga21924-LGA, cache-mia-kmia1760086-MIA",
       "X-Cache": "MISS, HIT, HIT",
       "X-Timer": "S1789603438.388822,VS0,VE42"
-    }
+    },
+    "cache_file": ".cache/arxiv/2410.10796v3.html"
   },
   {
     "url": "https://arxiv.org/html/2509.13683v1",
@@ -87,6 +90,7 @@
       "X-Served-By": "cache-lga21991-LGA, cache-lga21991-LGA, cache-lga21966-LGA, cache-mia-kmia1760034-MIA",
       "X-Cache": "MISS, HIT, MISS",
       "X-Timer": "S1789603442.861493,VS0,VE44"
-    }
+    },
+    "cache_file": ".cache/arxiv/2509.13683v1.html"
   }
 ]
