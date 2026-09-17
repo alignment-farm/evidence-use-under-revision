@@ -17,6 +17,15 @@ for arm in manifest['args']['arms']:
         assert json.loads(r['target'])==h['target']==interpreter(r['prompt'])
     if len(updates)==256:assert sorted(r['history_index'] for r in updates)==list(range(256))
 gens=[r for r in rows if r['kind']=='generation'];groups=collections.defaultdict(list)
+case_by_id={c['id']:c for c in workload['cases']}
+training_bindings=next(iter(workload['histories'].values()))[0]['case']['bindings']
+for r in gens:
+    c=case_by_id[r['case']];q=c['request'];lines=r['prompt'].splitlines();at=next(i for i,line in enumerate(lines) if line.startswith('CURRENT='))
+    assert json.loads(lines[at][8:])['bindings']==c['bindings']
+    assert json.loads(lines[at+1][8:])==q
+    rebound=c['fresh'] and c['bindings'][q['entity']]!=training_bindings[q['entity'].replace('_new_','_old_')]
+    assert r['fresh']==c['fresh'] and r.get('binding_changed',False)==rebound
+assert not ({json.dumps(h['case']['request'],sort_keys=True) for hist in workload['histories'].values() for h in hist} & {json.dumps(c['request'],sort_keys=True) for c in workload['cases']})
 for r in gens:
     target=interpreter(r['prompt']);assert target==r['target']
     s=score(r['raw'],target)
