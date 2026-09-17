@@ -1,8 +1,26 @@
 # Evidence use under revision
 
 An independent Construct-2 ancillary study, commissioned 16 September 2026.
-Preparation is complete when this repository is published; no experiment has
-been run by the root. The investigator owns bounded exploration and execution.
+
+**Status: bounded local study completed, 16 September 2026.**
+
+A prespecified 128-update varied-history checkpoint improved complete outcomes
+through two authoritative corrections: 65/96 fresh use events, versus 52/96 for
+the base and 61/96 for the stronger contextual lesson. Its measured training plus
+inference time was lower over this observed sequence, but construction costs,
+serving optimizations and unchanged-case regressions limit the repayment claim.
+Further training reduced the same trajectory to 45/96. A supplied executable
+policy completed 96/96. The broader question and root acceptance remain separate.
+
+[Findings](FINDINGS.md) · [Fresh protocol](protocol/final-v1.md) ·
+[Current evidence ledger](evidence/publication-v2/ledger.json) ·
+[All fresh endpoints](evidence/fresh-v1-analysis/tables.md) ·
+[Reproduction](notes/reproduction.md)
+
+Execution and audits are complete: 1,280 updates, 1,808 experimental generations
+and 198 checkpoint reload probes. Failed launches, failed analysis, weak
+acquisition checkpoints and the ordering diagnostic are retained. EU1–EU3 below
+remain the original prospective expectations; their assessment is in the findings.
 
 ## Question
 
@@ -107,8 +125,10 @@ and explanation sharpen.
 For local background, see Construct-2's
 [selection](../../construct-2/notes/EVIDENCE_USE.md) and
 [dated reading ledger](../../construct-2/sources/2026-09-16-evidence-use/README.md).
-These sibling links work in the shared workspace. The self-contained question
-and primary sources above suffice to begin without loading the root's full history.
+These commissioning pointers depend on the root checkout; the dated ledger was
+absent during this investigation. This study preserves its own inspected source
+versions and provenance in [methods](notes/methods.md). The self-contained question
+and primary sources above suffice without the root's full history.
 If reusing ancillary evidence, inspect that study's instructions, methods,
 publication and exact revision before relying on it.
 

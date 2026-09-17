@@ -1,6 +1,6 @@
 """Rebuild the compact publication ledger from audited, immutable runs."""
 import argparse, json, hashlib
-from workload import score
+from workload import score, oracle, interpreter, evidence
 from pathlib import Path
 ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);a=ap.parse_args();out=Path(a.output);out.mkdir(parents=True,exist_ok=False)
 specs=[('development-v2','development-v2-analysis-v2','development-v2-audit'),('order-diagnostic-v1','order-diagnostic-v1-analysis','order-diagnostic-v1-audit'),('fresh-v1','fresh-v1-analysis','fresh-v1-audit')]
@@ -16,6 +16,9 @@ for run,analysis,audit in specs:
     assert all(x['match'] for x in au['probes']) and au['invariants']['base_unchanged'] and au['invariants']['reset_max_logit_delta']==0
     generations=[x for x in rows if x['kind'] in ['generation','recall']];updates=[x for x in rows if x['kind']=='update']
     w=json.loads((p/'workload.json').read_text())
+    for ex in [x for x in rows if x['kind']=='executable']:
+        c=next(c for c in w['cases'] if c['id']==ex['case']);policy=w['policies'][ex['version']]
+        assert ex['complete'] and ex['result']==ex['target']==oracle(c,policy)==interpreter(evidence(c,policy))
     for rec in [x for x in rows if x['kind']=='recall']:
         h=next(h for h in w['histories'][rec['arm']][:8] if h['case']['id']==rec['case'])
         assert rec['target']==h['target']
@@ -24,7 +27,7 @@ for run,analysis,audit in specs:
 totals={k:sum(x['cost'][k] for x in ledger) for k in ledger[0]['cost']}
 totals['audit_seconds']=sum(x['audit']['seconds'] for x in ledger);totals['audit_probes']=sum(x['audit']['probes'] for x in ledger)
 (out/'ledger.json').write_text(json.dumps(dict(runs=ledger,investigation_totals=totals,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()),indent=2))
-text='| Fresh method | Updates | Initial | Correction 1 | Correction 2 | 96-use total | Acquisition s | Use s |\n|---|---:|---:|---:|---:|---:|---:|---:|\n'
+text='| Fresh method | Updates | Initial | Correction 1 | Correction 2 | 96-use total | Training s | Use s |\n|---|---:|---:|---:|---:|---:|---:|---:|\n'
 f=ledger[-1]
 for t in f['candidate_trajectories']:
     cells=[r for r in f['tables'] if r['arm']==t['arm'] and r['step']==t['step']];cells.sort(key=lambda r:r['version'])

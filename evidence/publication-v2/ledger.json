@@ -1,0 +1,2914 @@
+{
+  "runs": [
+    {
+      "run": "development-v2",
+      "manifest": {
+        "args": {
+          "output": "evidence/development-v2",
+          "seed": 731,
+          "steps": 256,
+          "arms": [
+            "stable",
+            "varied"
+          ],
+          "pilot": false
+        },
+        "git": "aba9622f6c44438fff91786f7e4836656cf7e256",
+        "dirty": "?? evidence/development-v2/\n",
+        "started": 1789603617.061395,
+        "resource_limit_bytes": 34359738368
+      },
+      "status": {
+        "status": "complete",
+        "seconds": 875.198421292007,
+        "peak_mlx_bytes": 9617521692
+      },
+      "tables": [
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 18
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "field_correct": [
+            25,
+            18,
+            29,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 19,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 12
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 11
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 4
+          },
+          "field_correct": [
+            27,
+            19,
+            31,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 3
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 7
+          },
+          "field_correct": [
+            27,
+            18,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 22,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 22
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "field_correct": [
+            26,
+            22,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 12,
+            "correct": 8
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 7
+          },
+          "field_correct": [
+            27,
+            24,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 12,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 16
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 8
+          },
+          "field_correct": [
+            26,
+            25,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 23
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "field_correct": [
+            30,
+            23,
+            32,
+            30
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 22,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 12,
+            "correct": 8
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 6
+          },
+          "field_correct": [
+            27,
+            22,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 22,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 16
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 8
+          },
+          "field_correct": [
+            26,
+            22,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 0,
+          "n": 32,
+          "correct": 11,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 4
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 11
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 3
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 3
+          },
+          "field_correct": [
+            12,
+            11,
+            20,
+            12
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 1,
+          "n": 32,
+          "correct": 13,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 5
+          },
+          "changed": {
+            "n": 12,
+            "correct": 1
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 12
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 5
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 4
+          },
+          "field_correct": [
+            16,
+            15,
+            22,
+            16
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 2,
+          "n": 32,
+          "correct": 14,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 6
+          },
+          "changed": {
+            "n": 12,
+            "correct": 5
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 9
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 6
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 1
+          },
+          "field_correct": [
+            17,
+            16,
+            22,
+            17
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 0,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 8
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 18
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "field_correct": [
+            25,
+            19,
+            32,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 1,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 7
+          },
+          "field_correct": [
+            27,
+            21,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 2,
+          "n": 32,
+          "correct": 19,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 8
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 13
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 11
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 5
+          },
+          "field_correct": [
+            26,
+            20,
+            32,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 0,
+          "n": 32,
+          "correct": 11,
+          "fresh": {
+            "n": 16,
+            "correct": 6
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 5
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 11
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 3
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 3
+          },
+          "field_correct": [
+            19,
+            14,
+            20,
+            18
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 1,
+          "n": 32,
+          "correct": 13,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 6
+          },
+          "changed": {
+            "n": 12,
+            "correct": 2
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 11
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 5
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 3
+          },
+          "field_correct": [
+            22,
+            16,
+            22,
+            23
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 2,
+          "n": 32,
+          "correct": 12,
+          "fresh": {
+            "n": 16,
+            "correct": 6
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 6
+          },
+          "changed": {
+            "n": 12,
+            "correct": 2
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 10
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 4
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 2
+          },
+          "field_correct": [
+            23,
+            15,
+            22,
+            22
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 0,
+          "n": 32,
+          "correct": 17,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 17
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 9
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 9
+          },
+          "field_correct": [
+            23,
+            18,
+            31,
+            23
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 1,
+          "n": 32,
+          "correct": 20,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 6
+          },
+          "field_correct": [
+            26,
+            21,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 2,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 12,
+            "correct": 5
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 16
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 8
+          },
+          "field_correct": [
+            25,
+            21,
+            32,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        }
+      ],
+      "candidate_trajectories": [
+        {
+          "arm": "base",
+          "step": 0,
+          "correct": 55,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 63.44998574999045,
+          "total_active_seconds": 63.44998574999045,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1909,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "correct": 68,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 121.29490870889276,
+          "total_active_seconds": 121.29490870889276,
+          "prompt_tokens": 111716,
+          "completion_tokens": 1909,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "correct": 67,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 120.45084171000053,
+          "total_active_seconds": 120.45084171000053,
+          "prompt_tokens": 112388,
+          "completion_tokens": 1907,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "correct": 38,
+          "uses": 96,
+          "acquisition_updates": 128,
+          "acquisition_seconds": 56.35865457318141,
+          "use_seconds": 52.661655041825725,
+          "total_active_seconds": 109.02030961500714,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1308,
+          "training_input_tokens": 38248,
+          "training_loss_tokens": 1704,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "correct": 58,
+          "uses": 96,
+          "acquisition_updates": 256,
+          "acquisition_seconds": 112.60540682042483,
+          "use_seconds": 53.40793682393269,
+          "total_active_seconds": 166.01334364435752,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1349,
+          "training_input_tokens": 76496,
+          "training_loss_tokens": 3408,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "correct": 36,
+          "uses": 96,
+          "acquisition_updates": 128,
+          "acquisition_seconds": 56.348647173144855,
+          "use_seconds": 52.77319575185538,
+          "total_active_seconds": 109.12184292500024,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1316,
+          "training_input_tokens": 38360,
+          "training_loss_tokens": 1752,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "correct": 58,
+          "uses": 96,
+          "acquisition_updates": 256,
+          "acquisition_seconds": 112.68427409123979,
+          "use_seconds": 53.11017945790081,
+          "total_active_seconds": 165.7944535491406,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1335,
+          "training_input_tokens": 76819,
+          "training_loss_tokens": 3539,
+          "maintenance_updates": 0
+        }
+      ],
+      "audit": {
+        "seconds": 66.80994775000727,
+        "probes": 79
+      },
+      "cost": {
+        "updates": 512,
+        "generations": 704,
+        "update_seconds": 225.28968091166462,
+        "generation_seconds": 534.5457250304171,
+        "input_tokens": 153315,
+        "loss_tokens": 6947,
+        "prompt_tokens": 371376,
+        "completion_tokens": 11463,
+        "adapter_bytes": 10499572
+      },
+      "lesson_bytes": {
+        "stable": 2416,
+        "varied": 2416
+      },
+      "policy_bytes": [
+        135,
+        138,
+        138
+      ],
+      "executable": {
+        "n": 96,
+        "correct": 96,
+        "seconds": 0.001013503671856597
+      }
+    },
+    {
+      "run": "order-diagnostic-v1",
+      "manifest": {
+        "args": {
+          "output": "evidence/order-diagnostic-v1",
+          "seed": 731,
+          "steps": 256,
+          "arms": [
+            "varied"
+          ],
+          "pilot": false,
+          "shuffle": true
+        },
+        "git": "8a38945290021a8a9c1f2483028e8200c0629471",
+        "dirty": "?? evidence/order-diagnostic-v1/\n",
+        "started": 1789604636.5329878,
+        "resource_limit_bytes": 34359738368
+      },
+      "status": {
+        "status": "complete",
+        "seconds": 477.8563925840135,
+        "peak_mlx_bytes": 9617439772
+      },
+      "tables": [
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 18
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "field_correct": [
+            25,
+            18,
+            29,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 19,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 12
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 11
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 4
+          },
+          "field_correct": [
+            27,
+            19,
+            31,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 3
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 7
+          },
+          "field_correct": [
+            27,
+            18,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 23
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "field_correct": [
+            30,
+            23,
+            32,
+            30
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 22,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 12,
+            "correct": 8
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 6
+          },
+          "field_correct": [
+            27,
+            22,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 22,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 16
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 14
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 8
+          },
+          "field_correct": [
+            26,
+            22,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 0,
+          "n": 32,
+          "correct": 13,
+          "fresh": {
+            "n": 16,
+            "correct": 6
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 7
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 13
+          },
+          "zero": {
+            "n": 8,
+            "correct": 7
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 6
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 6
+          },
+          "field_correct": [
+            25,
+            14,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 1,
+          "n": 32,
+          "correct": 16,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 12,
+            "correct": 4
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 12
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 8
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 4
+          },
+          "field_correct": [
+            26,
+            16,
+            32,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 2,
+          "n": 32,
+          "correct": 13,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 5
+          },
+          "changed": {
+            "n": 12,
+            "correct": 3
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 10
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 5
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 2
+          },
+          "field_correct": [
+            22,
+            13,
+            32,
+            22
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 0,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 21
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "field_correct": [
+            28,
+            21,
+            31,
+            28
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 1,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 12,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 7
+          },
+          "field_correct": [
+            30,
+            21,
+            32,
+            30
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 2,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 0,
+            "correct": 0
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 12,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 20,
+            "correct": 16
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 12,
+            "correct": 8
+          },
+          "field_correct": [
+            30,
+            23,
+            32,
+            30
+          ],
+          "valid": 32,
+          "at_limit": 0
+        }
+      ],
+      "candidate_trajectories": [
+        {
+          "arm": "base",
+          "step": 0,
+          "correct": 55,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 62.93650303405593,
+          "total_active_seconds": 62.93650303405593,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1909,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "correct": 67,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 120.51464186809608,
+          "total_active_seconds": 120.51464186809608,
+          "prompt_tokens": 112388,
+          "completion_tokens": 1907,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "correct": 42,
+          "uses": 96,
+          "acquisition_updates": 128,
+          "acquisition_seconds": 56.10423954189173,
+          "use_seconds": 53.01619995798683,
+          "total_active_seconds": 109.12043949987856,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1353,
+          "training_input_tokens": 38416,
+          "training_loss_tokens": 1775,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "correct": 65,
+          "uses": 96,
+          "acquisition_updates": 256,
+          "acquisition_seconds": 112.17582408504677,
+          "use_seconds": 52.663289752730634,
+          "total_active_seconds": 164.8391138377774,
+          "prompt_tokens": 27620,
+          "completion_tokens": 1333,
+          "training_input_tokens": 76819,
+          "training_loss_tokens": 3539,
+          "maintenance_updates": 0
+        }
+      ],
+      "audit": {
+        "seconds": 45.018513249990065,
+        "probes": 40
+      },
+      "cost": {
+        "updates": 256,
+        "generations": 400,
+        "update_seconds": 112.17582408504677,
+        "generation_seconds": 297.79866215391667,
+        "input_tokens": 76819,
+        "loss_tokens": 3539,
+        "prompt_tokens": 199834,
+        "completion_tokens": 6716,
+        "adapter_bytes": 5249786
+      },
+      "lesson_bytes": {
+        "varied": 2416
+      },
+      "policy_bytes": [
+        135,
+        138,
+        138
+      ],
+      "executable": {
+        "n": 96,
+        "correct": 96,
+        "seconds": 0.0010517891205381602
+      }
+    },
+    {
+      "run": "fresh-v1",
+      "manifest": {
+        "args": {
+          "output": "evidence/fresh-v1",
+          "seed": 947,
+          "steps": 256,
+          "arms": [
+            "stable",
+            "varied"
+          ],
+          "pilot": false,
+          "shuffle": true,
+          "rebind": true
+        },
+        "git": "8e93219b1582ff60e22342fa64a06d817c4b0328",
+        "dirty": "?? evidence/fresh-v1/\n",
+        "started": 1789605202.341402,
+        "resource_limit_bytes": 34359738368
+      },
+      "status": {
+        "status": "complete",
+        "seconds": 863.5090711659868,
+        "peak_mlx_bytes": 9617505308
+      },
+      "tables": [
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 7
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 18
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "field_correct": [
+            26,
+            18,
+            29,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 17,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 11,
+            "correct": 4
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 13
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 9
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 5
+          },
+          "field_correct": [
+            25,
+            17,
+            30,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "base",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 17,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 4
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 13,
+            "correct": 5
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 12
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 9
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 4
+          },
+          "field_correct": [
+            25,
+            17,
+            29,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 20,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 20
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "field_correct": [
+            28,
+            20,
+            31,
+            28
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 11,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 7
+          },
+          "field_correct": [
+            24,
+            21,
+            31,
+            24
+          ],
+          "valid": 31,
+          "at_limit": 1
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 20,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 13,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 6
+          },
+          "field_correct": [
+            25,
+            20,
+            32,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 0,
+          "n": 32,
+          "correct": 13,
+          "fresh": {
+            "n": 16,
+            "correct": 6
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 3
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 7
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 13
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 5
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 5
+          },
+          "field_correct": [
+            26,
+            13,
+            31,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 1,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 11,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 6
+          },
+          "field_correct": [
+            27,
+            21,
+            32,
+            27
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "version": 2,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 13,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 6
+          },
+          "field_correct": [
+            26,
+            21,
+            32,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 0,
+          "n": 32,
+          "correct": 14,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 4
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 7
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 6
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 6
+          },
+          "field_correct": [
+            19,
+            14,
+            32,
+            19
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 1,
+          "n": 32,
+          "correct": 19,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 11,
+            "correct": 4
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 11
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 7
+          },
+          "field_correct": [
+            24,
+            19,
+            32,
+            24
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "version": 2,
+          "n": 32,
+          "correct": 18,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 13,
+            "correct": 5
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 13
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 10
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 5
+          },
+          "field_correct": [
+            24,
+            19,
+            32,
+            24
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 0,
+          "n": 32,
+          "correct": 23,
+          "fresh": {
+            "n": 16,
+            "correct": 11
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 7
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 23
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 15
+          },
+          "field_correct": [
+            28,
+            23,
+            32,
+            28
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 1,
+          "n": 32,
+          "correct": 20,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 11
+          },
+          "changed": {
+            "n": 11,
+            "correct": 3
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 17
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 9
+          },
+          "field_correct": [
+            24,
+            20,
+            31,
+            24
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "version": 2,
+          "n": 32,
+          "correct": 15,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 4
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 8
+          },
+          "changed": {
+            "n": 13,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 9
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 7
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 1
+          },
+          "field_correct": [
+            22,
+            15,
+            32,
+            22
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 0,
+          "n": 32,
+          "correct": 21,
+          "fresh": {
+            "n": 16,
+            "correct": 12
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 8
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 9
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 21
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 13
+          },
+          "field_correct": [
+            24,
+            21,
+            32,
+            24
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 1,
+          "n": 32,
+          "correct": 24,
+          "fresh": {
+            "n": 16,
+            "correct": 12
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 6
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 12
+          },
+          "changed": {
+            "n": 11,
+            "correct": 7
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 17
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 16
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 9
+          },
+          "field_correct": [
+            26,
+            24,
+            32,
+            26
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "version": 2,
+          "n": 32,
+          "correct": 20,
+          "fresh": {
+            "n": 16,
+            "correct": 10
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 10
+          },
+          "changed": {
+            "n": 13,
+            "correct": 6
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 14
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 12
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 6
+          },
+          "field_correct": [
+            25,
+            20,
+            32,
+            25
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 0,
+          "n": 32,
+          "correct": 15,
+          "fresh": {
+            "n": 16,
+            "correct": 9
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 5
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 6
+          },
+          "changed": {
+            "n": 0,
+            "correct": 0
+          },
+          "unchanged": {
+            "n": 32,
+            "correct": 15
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 7
+          },
+          "unchanged_nonzero": {
+            "n": 24,
+            "correct": 7
+          },
+          "field_correct": [
+            21,
+            15,
+            32,
+            21
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 1,
+          "n": 32,
+          "correct": 15,
+          "fresh": {
+            "n": 16,
+            "correct": 7
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 3
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 8
+          },
+          "changed": {
+            "n": 11,
+            "correct": 4
+          },
+          "unchanged": {
+            "n": 21,
+            "correct": 11
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 7
+          },
+          "unchanged_nonzero": {
+            "n": 13,
+            "correct": 3
+          },
+          "field_correct": [
+            20,
+            18,
+            32,
+            20
+          ],
+          "valid": 32,
+          "at_limit": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "version": 2,
+          "n": 32,
+          "correct": 15,
+          "fresh": {
+            "n": 16,
+            "correct": 8
+          },
+          "rebound": {
+            "n": 8,
+            "correct": 4
+          },
+          "familiar": {
+            "n": 16,
+            "correct": 7
+          },
+          "changed": {
+            "n": 13,
+            "correct": 4
+          },
+          "unchanged": {
+            "n": 19,
+            "correct": 11
+          },
+          "zero": {
+            "n": 8,
+            "correct": 8
+          },
+          "nonzero": {
+            "n": 24,
+            "correct": 7
+          },
+          "unchanged_nonzero": {
+            "n": 11,
+            "correct": 3
+          },
+          "field_correct": [
+            20,
+            17,
+            32,
+            20
+          ],
+          "valid": 32,
+          "at_limit": 0
+        }
+      ],
+      "candidate_trajectories": [
+        {
+          "arm": "base",
+          "step": 0,
+          "correct": 52,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 62.903100617957534,
+          "total_active_seconds": 62.903100617957534,
+          "prompt_tokens": 27626,
+          "completion_tokens": 1907,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "lesson-stable",
+          "step": 0,
+          "correct": 61,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 121.15547308407258,
+          "total_active_seconds": 121.15547308407258,
+          "prompt_tokens": 111626,
+          "completion_tokens": 1942,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "lesson-varied",
+          "step": 0,
+          "correct": 55,
+          "uses": 96,
+          "acquisition_updates": 0,
+          "acquisition_seconds": 0,
+          "use_seconds": 120.73681921593379,
+          "total_active_seconds": 120.73681921593379,
+          "prompt_tokens": 111818,
+          "completion_tokens": 1918,
+          "training_input_tokens": 0,
+          "training_loss_tokens": 0,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "stable",
+          "step": 128,
+          "correct": 51,
+          "uses": 96,
+          "acquisition_updates": 128,
+          "acquisition_seconds": 56.096082128118724,
+          "use_seconds": 52.741340334905544,
+          "total_active_seconds": 108.83742246302427,
+          "prompt_tokens": 27626,
+          "completion_tokens": 1338,
+          "training_input_tokens": 38242,
+          "training_loss_tokens": 1706,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "stable",
+          "step": 256,
+          "correct": 58,
+          "uses": 96,
+          "acquisition_updates": 256,
+          "acquisition_seconds": 112.1039497081947,
+          "use_seconds": 52.68345054311794,
+          "total_active_seconds": 164.78740025131265,
+          "prompt_tokens": 27626,
+          "completion_tokens": 1335,
+          "training_input_tokens": 76480,
+          "training_loss_tokens": 3404,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 128,
+          "correct": 65,
+          "uses": 96,
+          "acquisition_updates": 128,
+          "acquisition_seconds": 56.0159750438761,
+          "use_seconds": 52.56612715811934,
+          "total_active_seconds": 108.58210220199544,
+          "prompt_tokens": 27626,
+          "completion_tokens": 1327,
+          "training_input_tokens": 38310,
+          "training_loss_tokens": 1741,
+          "maintenance_updates": 0
+        },
+        {
+          "arm": "varied",
+          "step": 256,
+          "correct": 45,
+          "uses": 96,
+          "acquisition_updates": 256,
+          "acquisition_seconds": 112.05692120388267,
+          "use_seconds": 52.73482616702677,
+          "total_active_seconds": 164.79174737090943,
+          "prompt_tokens": 27626,
+          "completion_tokens": 1338,
+          "training_input_tokens": 76624,
+          "training_loss_tokens": 3484,
+          "maintenance_updates": 0
+        }
+      ],
+      "audit": {
+        "seconds": 66.86617862500134,
+        "probes": 79
+      },
+      "cost": {
+        "updates": 512,
+        "generations": 704,
+        "update_seconds": 224.16087091207737,
+        "generation_seconds": 532.795910913148,
+        "input_tokens": 153104,
+        "loss_tokens": 6888,
+        "prompt_tokens": 370738,
+        "completion_tokens": 11530,
+        "adapter_bytes": 10499572
+      },
+      "lesson_bytes": {
+        "stable": 2421,
+        "varied": 2419
+      },
+      "policy_bytes": [
+        136,
+        138,
+        138
+      ],
+      "executable": {
+        "n": 96,
+        "correct": 96,
+        "seconds": 0.0010647909657564014
+      }
+    }
+  ],
+  "investigation_totals": {
+    "updates": 1280,
+    "generations": 1808,
+    "update_seconds": 561.6263759087888,
+    "generation_seconds": 1365.1402980974817,
+    "input_tokens": 383238,
+    "loss_tokens": 17374,
+    "prompt_tokens": 941948,
+    "completion_tokens": 29709,
+    "adapter_bytes": 26248930,
+    "audit_seconds": 178.69463962499867,
+    "audit_probes": 198
+  },
+  "source_sha256": "272ef68a31773a723c0d1c2e1892f814222e99ecfc55a274a69b953fd4def439"
+}
