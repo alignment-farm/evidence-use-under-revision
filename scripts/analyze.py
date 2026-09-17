@@ -23,6 +23,7 @@ for (arm,step,v),rs in groups.items():
     table['valid']=sum(r['valid'] for r in rs);table['at_limit']=sum(r['at_limit'] for r in rs);tables.append(table)
     if v:
         before={r['case']:r for r in groups[(arm,step,v-1)]}
+        assert all(r['changed']==(r['target']!=before[r['case']]['target']) for r in rs)
         eligible=[r for r in rs if not r['changed'] and before[r['case']]['complete']]
         transitions.append(dict(arm=arm,step=step,version=v,previously_correct_unchanged=len(eligible),retained=sum(r['complete'] for r in eligible)))
 costs=[]

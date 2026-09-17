@@ -4,7 +4,7 @@ import mlx.core as mx
 from runtime import Runtime, resource, sha, digest
 from workload import *
 
-ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--seed',type=int,default=731);ap.add_argument('--steps',type=int,default=256);ap.add_argument('--arms',nargs='+',default=['stable','varied']);ap.add_argument('--pilot',action='store_true');a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--seed',type=int,default=731);ap.add_argument('--steps',type=int,default=256);ap.add_argument('--arms',nargs='+',default=['stable','varied']);ap.add_argument('--pilot',action='store_true');ap.add_argument('--shuffle',action='store_true');a=ap.parse_args()
 assert a.steps<=256 and set(a.arms)<= {'stable','varied'}
 out=Path(a.output);out.mkdir(parents=True,exist_ok=False)
 start=time.monotonic();events=(out/'events.jsonl').open('w');status='failed'
@@ -46,9 +46,12 @@ try:
     if not a.pilot:
         for arm in a.arms:
             rt.restore(initial);opt=rt.optimizer();hist=history(a.seed,arm)
+            order=list(range(len(hist)))
+            if a.shuffle: random.Random(a.seed+872).shuffle(order)
+            save(arm+'-order.json',order)
             for i in range(a.steps):
-                guard();h=hist[i];text=prompt(h['case'],h['policy']);ids=rt.encode(text);target=json.dumps(h['target']);y=rt.target(ids,target)
-                r=rt.step(ids,y,opt);write('update',arm=arm,step=i+1,history_index=i,prompt=text,target=target,**r)
+                guard();h=hist[order[i]];text=prompt(h['case'],h['policy']);ids=rt.encode(text);target=json.dumps(h['target']);y=rt.target(ids,target)
+                r=rt.step(ids,y,opt);write('update',arm=arm,step=i+1,history_index=order[i],prompt=text,target=target,**r)
                 if (i+1)%32==0:print('update',arm,i+1,'loss',r['loss'],flush=True)
                 if i+1 in [128,a.steps]:
                     st=rt.snapshot();fn=f'{arm}-{i+1}.safetensors';mx.save_safetensors(str(out/fn),dict(st))
